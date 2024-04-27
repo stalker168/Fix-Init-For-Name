@@ -1,0 +1,6 @@
+{
+    "FIX-INIT-FOR-NAME.TokenName": "Token Name",
+    "FIX-INIT-FOR-NAME.TokenNameHint": "Enter the token name",
+    "FIX-INIT-FOR-NAME.InitiativeValue": "Initiative Value",
+    "FIX-INIT-FOR-NAME.InitiativeValueHint": "Enter the initiative value"
+}

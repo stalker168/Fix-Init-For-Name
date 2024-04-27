@@ -1,0 +1,6 @@
+{
+    "FIX-INIT-FOR-NAME.TokenName": "Имя токена",
+    "FIX-INIT-FOR-NAME.TokenNameHint": "Введите имя токена",
+    "FIX-INIT-FOR-NAME.InitiativeValue": "Значение инициативы",
+    "FIX-INIT-FOR-NAME.InitiativeValueHint": "Введите значение инициативы"
+}

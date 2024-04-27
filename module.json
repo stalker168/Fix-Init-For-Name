@@ -1,0 +1,39 @@
+{
+    "id": "fix-init-for-name",
+    "name": "Fix-Init-For-Name",
+    "title": "Fix Init For Name",
+    "description": "A module to fix initiative roll to always be 20 for Logovo.",
+    "version": "0.9.3",
+    "authors": [
+      {
+        "name": "Salamander",
+        "url": "https://github.com/stalker168"
+      }
+    ],
+    "esmodules": [
+      "scripts/combatant-init.js",
+      "scripts/settings.js"
+    ],
+    "minimumCoreVersion": "10",
+    "compatibleCoreVersion": "11",
+    "compatibility": {
+      "minimum": 10,
+      "verified": 11
+    },
+    "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+      },
+      {
+        "lang": "ru",
+        "name": "Русский",
+        "path": "lang/ru.json"
+      }
+    ],
+    "url": "https://github.com/stalker168/fix-init-for-name",
+    "manifest": "https://raw.githubusercontent.com/stalker168/fix-init-for-name/main/module.json",
+    "download": "https://github.com/stalker168/fix-init-for-name/archive/refs/heads/main.zip",
+    "license": "MIT"
+}
