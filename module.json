@@ -33,7 +33,7 @@
       }
     ],
     "url": "https://github.com/stalker168/fix-init-for-name",
-    "manifest": "https://raw.githubusercontent.com/stalker168/fix-init-for-name/main/module.json",
-    "download": "https://github.com/stalker168/fix-init-for-name/archive/refs/heads/main.zip",
+    "manifest": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/fifn/module.json",
+    "download": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/fifn/fix-init-for-name.zip",
     "license": "MIT"
 }
