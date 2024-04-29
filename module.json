@@ -3,7 +3,7 @@
     "name": "Fix-Init-For-Name",
     "title": "Fix Init For Name",
     "description": "A module to fix initiative roll to always be 20 for Logovo.",
-    "version": "0.9.3",
+    "version": "1.0.1",
     "authors": [
       {
         "name": "Salamander",
