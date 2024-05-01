@@ -19,23 +19,14 @@ Hooks.on('createCombatant', async (combatant) => {
   await combatant.update({ initiative: combatant.initiative });
 });
 
-Hooks.on('preUpdateCombatant', (combatant, changes) => {
-  if (changes.initiative !== undefined) {
-    setFixedInitiative(combatant);
-  }
-});
-
-Hooks.on('preUpdateCombat', (combat, changes, options, userId) => {
-  if (changes.round !== undefined && changes.round === 1) {
-    combat.combatants.forEach((combatant) => {
-      setFixedInitiative(combatant);
-    });
-  }
-});
-
 Hooks.on("dnd5e.rollInitiative", async function(actor, combatants) {
   for (const combatant of combatants) {
     setFixedInitiative(combatant);
     await combatant.update({ initiative: combatant.initiative });
   }
+});
+
+Hooks.on('updateCombatant', async (combatant, changes) => {
+  setFixedInitiative(combatant);
+  await combatant.update({ initiative: combatant.initiative });
 });

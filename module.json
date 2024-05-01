@@ -3,7 +3,7 @@
     "name": "Fix-Init-For-Name",
     "title": "Fix Init For Name",
     "description": "A module to fix initiative roll to always be 20 for Logovo.",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "authors": [
       {
         "name": "Salamander",
@@ -34,6 +34,6 @@
     ],
     "url": "https://github.com/stalker168/fix-init-for-name",
     "manifest": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/fifn/module.json",
-    "download": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/1.0.1/Fix-Init-For-Name.zip",
+    "download": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/1.1.0/Fix-Init-For-Name.zip",
     "license": "GNU"
 }
