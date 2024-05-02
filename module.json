@@ -32,6 +32,19 @@
         "path": "lang/ru.json"
       }
     ],
+    "relationships": {
+      "systems": [{
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": [
+          {
+            "minimum": "2",
+            "verified": "3",
+            "maximum": "3"
+          }
+        ]
+      }],
+    },
     "url": "https://github.com/stalker168/fix-init-for-name",
     "manifest": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/fifn/module.json",
     "download": "https://github.com/stalker168/Fix-Init-For-Name/releases/download/1.2.0/Fix-Init-For-Name.zip",
