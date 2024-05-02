@@ -5,13 +5,30 @@ Hooks.once('ready', () => {
 });
 
 function setFixedInitiative(combatant) {
-  const tokenName = game.settings.get('fix-init-for-name', 'tokenName');
-  const initiativeValue = game.settings.get('fix-init-for-name', 'initiativeValue');
+  const tokenNameValuesString = game.settings.get('fix-init-for-name', 'tokenNameValues');
+  const tokenNameValues = parseTokenNameValues(tokenNameValuesString);
 
-  if (combatant.token?.name === tokenName) {
+  const tokenName = combatant.token?.name;
+  const initiativeValue = tokenNameValues[tokenName];
+
+  if (initiativeValue !== undefined) {
     combatant.initiative = Number(initiativeValue);
     combatant.rollResultLabel = `${combatant.initiative}`;
   }
+}
+
+function parseTokenNameValues(tokenNameValuesString) {
+  const tokenNameValues = {};
+  const pairs = tokenNameValuesString.split(',');
+
+  for (const pair of pairs) {
+    const [name, value] = pair.trim().split(':');
+    if (name && value) {
+      tokenNameValues[name] = value;
+    }
+  }
+
+  return tokenNameValues;
 }
 
 Hooks.on('createCombatant', async (combatant) => {
@@ -33,9 +50,10 @@ Hooks.on('updateCombatant', async (combatant, changes) => {
 
 Hooks.on('preCreateChatMessage', (message) => {
   const isInitiativeRoll = message.flags?.core?.initiativeRoll;
-  const tokenName = game.settings.get('fix-init-for-name', 'tokenName');
+  const tokenNameValuesString = game.settings.get('fix-init-for-name', 'tokenNameValues');
+  const tokenNameValues = parseTokenNameValues(tokenNameValuesString);
 
-  if (isInitiativeRoll && message.speaker.alias === tokenName) {
+  if (isInitiativeRoll && tokenNameValues[message.speaker.alias] !== undefined) {
     return false;
   }
 });
