@@ -2,8 +2,8 @@
     "id": "fix-init-for-name",
     "name": "Fix-Init-For-Name",
     "title": "Fix Init For Name",
-    "description": "A module to fix initiative roll to always be 20 for Logovo.",
-    "version": "2.0.1",
+    "description": "Specify the actor's name and initiative value in the settings. The actor with the specified name will always have the initiative you set.",
+    "version": "2.0.2",
     "authors": [
       {
         "name": "Salamander",
