@@ -1,6 +1,4 @@
 {
-    "FIX-INIT-FOR-NAME.TokenName": "Token Name",
-    "FIX-INIT-FOR-NAME.TokenNameHint": "Enter the token name",
-    "FIX-INIT-FOR-NAME.InitiativeValue": "Initiative Value",
-    "FIX-INIT-FOR-NAME.InitiativeValueHint": "Enter the initiative value"
+    "FIX-INIT-FOR-NAME.TokenNameValues": "Name and initiative",
+    "FIX-INIT-FOR-NAME.TokenNameValuesHint": "Enter the token names and the required initiative value in the format: Name1:20, Name2:15 (comma separated)"
 }
